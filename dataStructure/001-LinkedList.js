@@ -15,7 +15,7 @@
  * 1. 链表最后一个节点的下一个元素始终是undefined或null。链表最后一个节点的下一个元素始终是undefined或null。
  */
 
-import { defualtEquals } from "./utils/utils";
+import { defualtEquals } from "../utils/utils";
 
 export class LinkedList {
   constructor(equalsFn = defualtEquals) {
@@ -49,9 +49,3 @@ export class Node {
     this.next = undefined;
   }
 }
-
-const link = new LinkedList();
-link.push(10);
-link.push(15);
-
-console.log(link);
